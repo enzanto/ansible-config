@@ -1,0 +1,16 @@
+- name: users | r2d2 | add public key
+  tags: dotfiles,r2d2,ssh,ssh-keys,users
+  authorized_key:
+    user: r2d2
+    key: "{{ item }}"
+  with_file:
+    - users/r2d2/ssh/r2d2_id_ed25519.pub
+
+- name: users | r2d2 | add sudoers file
+  tags: settings,r2d2,sudo,system,users
+  copy:
+    content: 'r2d2 ALL=(ALL) NOPASSWD: ALL'
+    dest: /etc/sudoers.d/r2d2
+    owner: root
+    group: root
+    mode: 0440

@@ -1,0 +1,29 @@
+Banner /etc/issue.net
+PrintMOTD yes
+
+Port {{ ssh_port |default(22) }}
+Protocol 2
+
+# Authentication:
+AllowUsers {{ ssh_users | default("fredrik osboxes") }}
+ChallengeResponseAuthentication no
+HostbasedAuthentication no
+LoginGraceTime 120
+PasswordAuthentication {{ passwd_auth | default("no") }}
+PermitEmptyPasswords no
+PermitRootLogin no
+PubkeyAuthentication yes
+StrictModes yes
+UsePAM yes
+
+# Security
+IgnoreRhosts yes
+
+# Misc. options
+AcceptEnv LANG LC_*
+TCPKeepAlive yes
+Subsystem sftp {{ sftp_path }}
+
+# Logging
+SyslogFacility AUTH
+LogLevel INFO

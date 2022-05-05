@@ -1,0 +1,27 @@
+- name: users |  fredrik | create group
+  tags: groups,fredrik,users
+  group:
+    name: fredrik
+    state: present
+- name: users | fredrik | create user
+  tags: fredrik,sudo,users
+  user:
+    name: fredrik
+    group: fredrik
+    groups: adm,{{ sudo_group }}
+    state: present
+    comment: "Fredrik"
+    password: "{{ fredrik_passwd }}"
+    shell: /bin/bash
+- name: add auth key
+  authorized_key:
+    user: fredrik
+    state: present
+    key: "{{ fredrik_ssh }}"
+- name: add passwordless sudo
+  copy:
+    dest: /etc/sudoers.d/fredrik
+    content: 'fredrik ALL=(ALL) NOPASSWD: ALL'
+    owner: root
+    group: root
+    mode: 0440

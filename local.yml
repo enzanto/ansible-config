@@ -1,0 +1,15 @@
+- hosts: all
+  tags: always
+  become: True
+  pre_tasks:
+    - name: pre-run | apt update
+      tags: always
+      apt: update_cache=yes
+      changed_when: False
+      when: ansible_distribution in ["Linux Mint", "Ubuntu", "Debian"]
+- hosts: all
+  tags: base
+  become: True
+  roles:
+    - base
+    

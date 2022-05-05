@@ -1,0 +1,4 @@
+fredrik_passwd: $6$iHx8Bw..0C$elzygKUhiMwEBkfbS94yGilHj8KAVUZMlLuIu9wBCmF1t1/HCJpdaAumFnUL8raHP3RWVCHw/G/3/JLiPZWKN/
+fredrik_ssh: https://github.com/enzanto.keys
+config_system_locale: 'nb_NO.UTF-8'
+config_system_language: 'en_US.UTF-8'
