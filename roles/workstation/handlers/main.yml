@@ -1,0 +1,10 @@
+---
+- name: restart_autofs
+  tags: autofs,system,system setup
+  service:
+    name: autofs
+    state: restarted
+- name: update_xdg
+  tags: users,config,xdg
+  become_user: jay
+  command: /usr/bin/xdg-user-dirs-update

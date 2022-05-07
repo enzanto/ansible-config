@@ -12,4 +12,8 @@
   become: True
   roles:
     - base
-    
+- hosts: workstation
+  tags: workstation
+  become: true
+  roles:
+    - workstation    

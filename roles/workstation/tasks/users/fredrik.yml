@@ -1,0 +1,69 @@
+
+- name: users | fredrik | remove preinstalled clutter from home directory
+  file:
+    path: /home/fredrik/{{ item }}
+    state: absent
+  with_items:
+    - examples.desktop
+    - Desktop
+    - Documents
+    - Downloads
+    - Music
+    - Pictures
+    - Public
+    - Templates
+    - Videos
+
+- name: users | fredrik | create personal config directories
+  tags: dotfiles,dotfiles-fredrik
+  file:
+    path: /home/fredrik/{{ item.dir }}
+    state: directory
+    owner: fredrik
+    group: fredrik
+    mode: 0700
+  with_items:
+    - { dir: .config }
+    - { dir: .config/autostart }
+    - { dir: .config/bpytop }
+    - { dir: .config/gtk-3.0 }
+    - { dir: .config/terminator }
+    - { dir: .local }
+    - { dir: .local/share }
+    - { dir: .local/share/applications }
+    - { dir: bin }
+    - { dir: desktop }
+    - { dir: documents }
+    - { dir: downloads }
+    - { dir: projects }
+    - { dir: templates }
+
+- name: users | fredrik | copy user-dirs.dirs
+  tags: dotfiles,dotfiles-fredrik
+  copy:
+    src: users/fredrik/user-dirs.dirs
+    dest: /home/fredrik/.config/user-dirs.dirs
+    owner: fredrik
+    group: fredrik
+    mode: 0600
+  notify: update_xdg
+
+- name: users | fredrik | copy personal config files
+  tags: dotfiles,dotfiles-fredrik
+  copy:
+    src: users/fredrik/{{ item.src }}
+    dest: /home/fredrik/{{ item.dest }}
+    owner: fredrik
+    group: fredrik
+    mode: 0600
+  with_items:
+    - { src: 'ssh_client_config', dest: '.ssh/config' }
+
+- name: users | fredrik | copy profile image
+  tags: dotfiles,dotfiles-fredrik
+  copy:
+    src: users/fredrik/profile_image.jpg
+    dest: /var/lib/AccountsService/icons/fredrik.jpg
+    owner: root
+    group: root
+    mode: 0644
