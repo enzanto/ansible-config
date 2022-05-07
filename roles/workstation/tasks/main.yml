@@ -14,3 +14,4 @@
   - import_tasks: software/firefox.yml
   - import_tasks: software/libreoffice.yml
   - import_tasks: software/gnucash.yml
+  - import_tasks: software/code.yml

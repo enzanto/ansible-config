@@ -42,6 +42,7 @@ todoist: false
 ulauncher: false
 vagrant: false
 virtualbox: false
+visualstudio: true
 vivaldi: false
 vlc: false
 xonotic: false
