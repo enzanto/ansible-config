@@ -5,4 +5,4 @@
     name: org.gnucash.GnuCash
     method: user
     state: present
-  when: gnucash is defined and gnucash == tru
+  when: gnucash is defined and gnucash == true
