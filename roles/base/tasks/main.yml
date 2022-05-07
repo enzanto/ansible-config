@@ -3,6 +3,7 @@
 - block:
 #setup users
   - import_tasks: users/fredrik.yml
+  - import_tasks: users/r2d2.yml
 #setup ansible environment
   - import_tasks: ansible_setup.yml
 #install software
