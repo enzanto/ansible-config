@@ -2,7 +2,7 @@
   tags: packages,flatpak,discord,workstation-packages
   become_user: fredrik
   flatpak:
-    name: com.discord.Discord
+    name: com.discordapp.Discord
     method: user
     state: present
   when: discord is defined and discord == true
