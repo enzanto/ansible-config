@@ -21,14 +21,17 @@ authy: false
 autofs: true
 chromium: false
 darktable: false
+discord: true
 firefox: true
 foliate: false
 games: false
 gnucash: true
 glimpse: false
+joplin: true
 keepassxc: false
 libreoffice: true
 lutris: false
+mailspring: true
 mattermost: false
 minecraft: false
 packer: false
@@ -41,11 +44,12 @@ thunderbird: false
 todoist: false
 ulauncher: false
 vagrant: false
-virtualbox: false
+virtualbox: true
 visualstudio: true
 vivaldi: false
 vlc: false
 xonotic: false
+yubico: true
 
 # desktop environment selection
 gnome: true

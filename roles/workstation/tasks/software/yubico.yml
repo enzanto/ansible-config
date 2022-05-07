@@ -1,0 +1,8 @@
+- name: software | yubico | install package
+  tags: packages,flatpak,yubico,workstation-packages
+  become_user: fredrik
+  flatpak:
+    name: com.yubico.yubioath
+    method: user
+    state: present
+  when: yubico is defined and yubico == true

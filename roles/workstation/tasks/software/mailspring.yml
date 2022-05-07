@@ -1,0 +1,8 @@
+- name: software | mailspring | install package
+  tags: packages,flatpak,mailspring,workstation-packages
+  become_user: fredrik
+  flatpak:
+    name: com.getmailspring.Mailspring
+    method: user
+    state: present
+  when: mailspring is defined and mailspring == true

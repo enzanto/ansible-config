@@ -11,7 +11,13 @@
   ## system setup
   - import_tasks: system_setup/autofs.yml
   ## install software
-  - import_tasks: software/firefox.yml
-  - import_tasks: software/libreoffice.yml
-  - import_tasks: software/gnucash.yml
   - import_tasks: software/code.yml
+  - import_tasks: software/discord.yml
+  - import_tasks: software/firefox.yml
+  - import_tasks: software/gnucash.yml
+  - import_tasks: software/joplin.yml
+  - import_tasks: software/libreoffice.yml
+  - import_tasks: software/mailspring.yml
+  - import_tasks: software/virtualbox.yml
+  - import_tasks: software/yakuake.yml
+  - import_tasks: software/yubico.yml
