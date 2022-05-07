@@ -10,7 +10,8 @@
 - name: users | fredrik | copy personal config files
   tags: dotfiles,dotfiles-fredrik
   copy:
-    src: users/fredrik/.var/app/org.gnucash.GnuCash/{{ item.src }}
+    src: users/fredrik/{{ item.src }}
+    dest: /home/fredrik/.var/app/org.gnucash/GnuCash/{{ item.dest }}
     owner: fredrik
     group: fredrik
     mode: 0600
