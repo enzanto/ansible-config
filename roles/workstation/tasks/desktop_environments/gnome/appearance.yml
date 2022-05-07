@@ -1,0 +1,22 @@
+- name: gnome | appearance | copy wallpaper file
+  tags: gnome,gnome-wallpaper
+  copy:
+    src: gnome/wallpaper.png
+    dest: /usr/share/backgrounds/fredrik-wallpaper.png
+    owner: root
+    group: root
+    mode: 0644
+
+- name: gnome | appearance | set wallpaper
+  tags: gnome,gnome-wallpaper
+  become_user: fredrik
+  dconf:
+    key: "/org/gnome/desktop/background/picture-uri"
+    value: "'file:///usr/share/backgrounds/fredrik-wallpaper.png'"
+
+- name: gnome | appearance | set wallpaper position
+  tags: gnome,gnome-wallpaper
+  become_user: fredrik
+  dconf:
+    key: "/org/gnome/desktop/background/picture-options"
+    value: "'zoom'"

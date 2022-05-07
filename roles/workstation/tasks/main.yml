@@ -5,6 +5,9 @@
 - block:
   ## User configs
   - import_tasks: users/fredrik.yml
+  ## desktop environment
+  - include_tasks: desktop_environments/gnome/appearance.yml
+    when: gnome is defined and gnome == true  
   ## system setup
   - import_tasks: system_setup/autofs.yml
   ## install software
