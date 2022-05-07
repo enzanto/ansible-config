@@ -1,0 +1,7 @@
+- name: software | yakuake | install package
+  tags: yakuake
+  package:
+    name: "{{ yakuake_package }}"
+  when:
+    - yakuake is defined
+    - yakuake == true

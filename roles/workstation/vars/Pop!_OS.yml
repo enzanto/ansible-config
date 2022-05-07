@@ -30,4 +30,4 @@ virtualbox_package: virtualbox
 visualstudio: code
 wireless_tools_package: wireless-tools
 wpa_supplicant_package: wpasupplicant
-yakuake: yakuake
+yakuake_package: yakuake
