@@ -24,6 +24,7 @@ darktable: false
 firefox: true
 foliate: false
 games: false
+gnucash: true
 glimpse: false
 keepassxc: false
 libreoffice: true

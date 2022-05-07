@@ -1,0 +1,8 @@
+- name: software | gnucash | install package
+  tags: packages,flatpak,gnucash,workstation-packages
+  become_user: fredrik
+  flatpak:
+    name: org.gnucash.GnuCash
+    method: user
+    state: present
+  when: gnucash is defined and gnucash == tru
