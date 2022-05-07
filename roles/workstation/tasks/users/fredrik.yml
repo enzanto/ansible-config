@@ -58,8 +58,6 @@
     mode: 0600
   with_items:
     - { src: 'ssh_client_config', dest: '.ssh/config' }
-    - { src: 'gnucash.keyfile', dest: '.var/app/org.gnucash.GnuCash/config/glib-2.0/settings/keyfile' }
-    - { src: 'gnucash.reports', dest: '.var/app/org.gnucash.GnuCash/data/gnucash/saved-reports-2.8'}
 
 - name: users | fredrik | copy profile image
   tags: dotfiles,dotfiles-fredrik
