@@ -1,2 +1,2 @@
 [fresh-installs]
-pop-os
+pop-os ansible_python_interpreter=/usr/bin/python3
