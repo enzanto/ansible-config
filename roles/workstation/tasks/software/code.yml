@@ -1,8 +1,6 @@
 - name: software | visualstudio | install package
   tags: packages,flatpak,visualstudio,workstation-packages
   become_user: fredrik
-  flatpak:
-    name: com.visualstudio.code
-    method: user
-    state: present
+  package:
+    name: "{{ visualstudio_package }}" 
   when: visualstudio is defined and visualstudio == true

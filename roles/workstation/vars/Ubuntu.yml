@@ -27,7 +27,7 @@ steam_package: steam
 terraform_version: 0.13.5
 vagrant_version: 2.2.14
 virtualbox_package: virtualbox
-visualstudio: code
+visualstudio_package: code
 wireless_tools_package: wireless-tools
 wpa_supplicant_package: wpasupplicant
 yakuake_package: yakuake

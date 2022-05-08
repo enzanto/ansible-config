@@ -13,7 +13,7 @@ microcode_intel_install: false
 # app defaults
 gui_editor: gvim
 terminal_emulator: terminator
-web_browser: flatpak run org.mozilla.firefox
+web_browser: firefox
 
 # application selection
 audacity: false
@@ -22,7 +22,7 @@ autofs: true
 chromium: false
 darktable: false
 discord: true
-firefox: true
+firefox: false
 foliate: false
 games: false
 gnucash: true
