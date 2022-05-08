@@ -6,8 +6,26 @@
     method: user
     state: present
   when: gnucash is defined and gnucash == true
+
+- name: users | fredrik | create gnucash config directories
+  tags: dotfiles,dotfiles-fredrik
+  file:
+    path: /home/fredrik/{{ item.dir }}
+    state: directory
+    owner: fredrik
+    group: fredrik
+    mode: 0700
+  with_items:
+    - { dir: .var }
+    - { dir: .var/app }
+    - { dir: .var/app/org.gnucash.GnuCash }
+    - { dir: .var/app/org.gnucash.GnuCash/config }
+    - { dir: .var/app/org.gnucash.GnuCash/config/glib-2.0 }
+    - { dir: .var/app/org.gnucash.GnuCash/config/glib-2.0/settings }
+    - { dir: .var/app/org.gnucash.GnuCash/data }
+    - { dir: .var/app/org.gnucash.GnuCash/data/gnucash }
   
-- name: users | fredrik | copy personal config files
+- name: users | fredrik | copy gnucash config files
   tags: dotfiles,dotfiles-fredrik
   copy:
     src: users/fredrik/{{ item.src }}

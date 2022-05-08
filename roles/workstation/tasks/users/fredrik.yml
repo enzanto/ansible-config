@@ -63,7 +63,7 @@
   tags: dotfiles,dotfiles-fredrik
   copy:
     src: users/fredrik/profile_image.jpg
-    dest: /var/lib/AccountsService/icons/fredrik.jpg
+    dest: /var/lib/AccountsService/icons/fredrik
     owner: root
     group: root
     mode: 0644
