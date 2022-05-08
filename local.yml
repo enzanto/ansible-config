@@ -6,7 +6,7 @@
       tags: always
       apt: update_cache=yes
       changed_when: False
-      when: ansible_distribution in ["Linux Mint", "Ubuntu", "Debian"]
+      when: ansible_distribution in ["Linux Mint", "Ubuntu", "Debian", "Pop!_OS"]
 - hosts: all
   tags: base
   become: True
