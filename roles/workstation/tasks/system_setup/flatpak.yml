@@ -5,9 +5,9 @@
 
 
 - name: system setup | flatpak | add repo
+  become_user: fredrik
   community.general.flatpak_remote:
     name: flathub
     state: present
     flatpakrepo_url: https://dl.flathub.org/repo/flathub.flatpakrepo
     method: user
-    become_user: fredrik
