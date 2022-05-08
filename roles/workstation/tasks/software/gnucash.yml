@@ -24,6 +24,7 @@
     - { dir: .var/app/org.gnucash.GnuCash/config/glib-2.0/settings }
     - { dir: .var/app/org.gnucash.GnuCash/data }
     - { dir: .var/app/org.gnucash.GnuCash/data/gnucash }
+  when: gnucash is defined and gnucash == true
   
 - name: users | fredrik | copy gnucash config files
   tags: dotfiles,dotfiles-fredrik
@@ -36,3 +37,4 @@
   with_items:
     - { src: 'gnucash.keyfile', dest: 'config/glib-2.0/settings/keyfile' }
     - { src: 'gnucash.reports', dest: 'data/gnucash/saved-reports-2.8'}
+  when: gnucash is defined and gnucash == true

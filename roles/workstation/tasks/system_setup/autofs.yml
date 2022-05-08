@@ -16,6 +16,17 @@
     - autofs is defined
     - autofs == true
 
+- name: users | fredrik | create mnt directories
+  tags: autofs
+  file:
+    path: /mnt/{{ item.dir }}
+    state: directory
+    owner: fredrik
+    group: fredrik
+    mode: 0700
+  with_items:
+    - { dir: NAS }
+
 - name: system setup | autofs | copy auto.master config file
   tags: autofs,dotfiles,dotfiles-jay
   copy:
