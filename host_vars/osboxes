@@ -1,0 +1,56 @@
+---
+branch: master
+
+ansible_cron_minute: "*/5"
+ssh_port: 22
+ssh_users: "fredrik r2d2"
+
+# platform-specific
+ansible_python_interpreter: /usr/bin/python3
+microcode_amd_install: true
+microcode_intel_install: false
+
+# app defaults
+gui_editor: gvim
+terminal_emulator: terminator
+web_browser: flatpak run org.mozilla.firefox
+
+# application selection
+audacity: false
+authy: false
+autofs: true
+chromium: false
+darktable: false
+discord: true
+firefox: true
+foliate: false
+games: false
+gnucash: true
+glimpse: false
+joplin: true
+keepassxc: false
+libreoffice: true
+lutris: false
+mailspring: true
+mattermost: false
+minecraft: false
+packer: false
+signal: false
+spotify: false
+steam: false
+syncthing: false
+terraform: false
+thunderbird: false
+todoist: false
+ulauncher: false
+vagrant: false
+virtualbox: true
+visualstudio: true
+vivaldi: false
+vlc: false
+xonotic: false
+yubico: true
+
+# desktop environment selection
+gnome: true
+mate: false
