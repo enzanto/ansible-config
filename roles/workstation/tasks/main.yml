@@ -10,6 +10,8 @@
     when: gnome is defined and gnome == true
   - include_tasks: desktop_environments/gnome/keybindings.yml  
     when: gnome is defined and gnome == true
+  - include_tasks: desktop_environments/gnome/pop_os.yaml
+    when: ansible_distribution == "Pop!_OS"
   ## system setup
   - import_tasks: system_setup/autofs.yml
   - import_tasks: system_setup/flatpak.yml
