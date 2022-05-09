@@ -50,7 +50,7 @@ vivaldi: false
 vlc: true
 xonotic: false
 yubico: true
-
+yakuake: true
 # desktop environment selection
 gnome: true
 mate: false
