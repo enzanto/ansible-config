@@ -2,3 +2,4 @@
 pop-os ansible_python_interpreter=/usr/bin/python3
 osboxes
 fredrik-tuf
+pop-desktop
