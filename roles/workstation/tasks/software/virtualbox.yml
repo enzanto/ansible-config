@@ -1,5 +1,5 @@
 - name: software | virtualbox | install package
-  tags: virtualbox
+  tags: virtualbox,packages,workstation-packages
   package:
     name: "{{ virtualbox_package }}"
   when:

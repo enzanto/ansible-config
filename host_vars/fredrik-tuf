@@ -37,7 +37,7 @@ minecraft: false
 packer: false
 signal: false
 spotify: false
-steam: false
+steam: true
 syncthing: false
 terraform: false
 thunderbird: false

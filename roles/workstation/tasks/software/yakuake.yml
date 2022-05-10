@@ -1,5 +1,5 @@
 - name: software | yakuake | install package
-  tags: yakuake
+  tags: yakuake,packages,workstation-packages
   package:
     name: "{{ yakuake_package }}"
   when:

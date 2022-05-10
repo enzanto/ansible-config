@@ -1,0 +1,13 @@
+- name: system_setup | software | update package index
+  apt:
+    name: 
+    - apt-transport-https
+    - ca-certificates
+
+- name: system_setup | software | download google cloud public signing key
+  get_url:
+    url: https://packages.cloud.google.com/apt/doc/apt-key.gpg
+    dest: /usr/share/keyrings/kubernetes-archive-keyring.gpg
+
+- name: system setup | software | add kubernetes repo
+  
