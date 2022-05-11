@@ -6,3 +6,9 @@
     method: user
     state: present
   when: yubico is defined and yubico == true
+
+- name: software | yubico install dependencies
+  tags: packages,yubico,workstation-packages
+  package:
+    name: pcscd
+  when: yubico is defined and yubico == true
