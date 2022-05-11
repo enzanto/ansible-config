@@ -41,6 +41,7 @@ steam: true
 syncthing: false
 terraform: false
 thunderbird: false
+timeshift: true
 todoist: false
 ulauncher: false
 vagrant: false

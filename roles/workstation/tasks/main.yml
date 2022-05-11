@@ -15,6 +15,7 @@
   ## system setup
   - import_tasks: system_setup/autofs.yml
   - import_tasks: system_setup/flatpak.yml
+  - import_tasks: system_setup/timeshift.yml
   ## install software
   - import_tasks: software/code.yml
   - import_tasks: software/darktable.yml
