@@ -1,5 +1,6 @@
 
 - name: users | fredrik | remove preinstalled clutter from home directory
+  tags: home-folders
   file:
     path: /home/fredrik/{{ item }}
     state: absent
@@ -15,7 +16,7 @@
     - Videos
 
 - name: users | fredrik | create personal config directories
-  tags: dotfiles,dotfiles-fredrik
+  tags: dotfiles,dotfiles-fredrik,home-folders
   file:
     path: /home/fredrik/{{ item.dir }}
     state: directory
@@ -37,7 +38,7 @@
     - { dir: templates }
 
 - name: users | fredrik | copy user-dirs.dirs
-  tags: dotfiles,dotfiles-fredrik
+  tags: dotfiles,dotfiles-fredrik,home-folder
   copy:
     src: users/fredrik/user-dirs.dirs
     dest: /home/fredrik/.config/user-dirs.dirs
