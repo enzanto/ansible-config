@@ -38,7 +38,7 @@
     - { dir: templates }
 
 - name: users | fredrik | copy user-dirs.dirs
-  tags: dotfiles,dotfiles-fredrik,home-folder
+  tags: dotfiles,dotfiles-fredrik,home-folders
   copy:
     src: users/fredrik/user-dirs.dirs
     dest: /home/fredrik/.config/user-dirs.dirs
