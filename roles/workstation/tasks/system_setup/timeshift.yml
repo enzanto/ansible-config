@@ -3,11 +3,3 @@
   package:
     name: timeshift
   when: timeshift is defined and timeshift == true
-
-- name: timeshift | start and enable
-  tags: timeshift
-  service:
-    name: timeshift
-    state: started
-    enabled: true
-  when: timeshift is defined and timeshift == true
