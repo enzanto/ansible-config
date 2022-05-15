@@ -1,1 +1,1 @@
-NAS    -fstype=nfs     192.168.1.223:/mnt/USB
+/mnt/NAS    -fstype=nfs     192.168.1.223:/mnt/USB
