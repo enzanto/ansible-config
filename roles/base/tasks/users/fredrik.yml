@@ -10,7 +10,7 @@
     group: fredrik
     groups: adm,{{ sudo_group }}
     state: present
-    comment: "Fredrik"
+    comment: "Fredrik Gjellestad"
     password: "{{ fredrik_passwd }}"
     shell: /bin/bash
 - name: add auth key
