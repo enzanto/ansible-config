@@ -1,6 +1,6 @@
 cron_package: cronie-anacron
 dconf_package: dconf
-nfs_client_package: nfs-common
+nfs_client_package: nfs-utils
 openssh_package: openssh-server
 openssh_service: sshd
 python_flake8_package: python3-flake8
