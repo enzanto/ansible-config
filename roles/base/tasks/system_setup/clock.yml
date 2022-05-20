@@ -11,6 +11,7 @@
     name: systemd-timesyncd
     state: started
     enabled: true
+  when: ansible_distribution in ["Pop!_OS", "Ubuntu", "Linux Mint"]
 
 - name: system setup | clock | set time zone
   tags: ntp,timezone,system setup
