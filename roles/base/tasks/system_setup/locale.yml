@@ -10,6 +10,12 @@
     state: present
   when: ansible_distribution in ["Pop!_OS", "Ubuntu", "Linux Mint"]
 
+- name: Install locale pack on rocky
+  package:
+    name: glibc-langpack-nb
+    state: present
+  when: ansible_distribution == "Rocky"
+
 - name: Get current locale and language configuration
   command: localectl status
   register: locale_status
