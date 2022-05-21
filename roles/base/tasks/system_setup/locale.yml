@@ -2,11 +2,13 @@
   locale_gen:
     name: "{{ config_system_locale }}"
     state: present
+  when: ansible_distribution in ["Pop!_OS", "Ubuntu", "Linux Mint"]
 
 - name: Ensure localisation files for '{{ config_system_language }}' are available
   locale_gen:
     name: "{{ config_system_language }}"
     state: present
+  when: ansible_distribution in ["Pop!_OS", "Ubuntu", "Linux Mint"]
 
 - name: Get current locale and language configuration
   command: localectl status
