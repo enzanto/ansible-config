@@ -10,5 +10,6 @@ python_psutil_package: python3-psutil
 python_pyflakes_package: python3-pyflakes
 python_setuptools_package: platform-python-setuptools
 python_virtualenv_package: python3-virtualenv
+sftp_path: /usr/libexec/openssh/sftp-server
 sudo_group: wheel
 vim_package: neovim
