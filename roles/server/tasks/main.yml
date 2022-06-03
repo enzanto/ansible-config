@@ -1,0 +1,7 @@
+---
+- block:
+  - include_tasks: ufw.yml
+
+  rescue:
+    - set_fact:otask_failur:
+          - server=true
