@@ -8,6 +8,7 @@
       - net-tools
       - "{{ nfs_client_package }}"
       - nmap
+      - ripgrep
       - rsync
       - "{{ vim_package }}"
       - wget
