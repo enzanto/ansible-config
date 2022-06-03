@@ -8,9 +8,16 @@
       - net-tools
       - "{{ nfs_client_package }}"
       - nmap
-      - ripgrep
       - rsync
       - "{{ vim_package }}"
       - wget
       - whois
       - zsh
+
+- name: system setup | utilities | install utility not for rocky
+  tags: packages,system,settings
+  package:
+    state: latest
+    name:
+      - ripgrep
+  when: ansible_distribution in ["Ubuntu", "Pop!_OS", "Linux Mint"]
