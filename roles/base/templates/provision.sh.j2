@@ -2,9 +2,9 @@
 
 # options
 ANSIBLEUSER="r2d2"
-BRANCH="{{ branch | default('master') }}"
+BRANCH="{{ branch | default('main') }}"
 LOGFILE="/var/log/ansible.log"
-REPO="put in url here"
+REPO="https://github.com/enzanto/ansible-config.git"
 VAULT_KEY="/home/r2d2/.ansible_pass.txt"
 PRECMD="sudo systemd-inhibit --who='ansible-pull' --why='provisioning'"
 
