@@ -12,7 +12,7 @@
 (let ((option (gnc:lookup-option options
                                  "__general"
                                  "report-list")))
-  ((lambda (o) (if o (gnc:option-set-value o '((221 1 1 #f) (222 1 1 #f) (223 1 1 #f) (224 1 1 #f) (225 2 1 #f) (226 2 1 #f) (227 2 1 #f) (228 1 1 #f) (229 1 1 #f) (230 2 1 #f) (231 2 1 #f))))) option))
+  ((lambda (o) (if o (gnc:option-set-value o '((151 1 1 #f) (152 1 1 #f) (153 1 1 #f) (154 1 1 #f) (155 2 1 #f) (156 2 1 #f) (157 2 1 #f) (158 1 1 #f) (159 1 1 #f) (160 2 1 #f) (161 2 1 #f))))) option))
 
 
 ; Section: General
@@ -778,7 +778,7 @@
 (let ((option (gnc:lookup-option options
                                  "__general"
                                  "report-list")))
-  ((lambda (o) (if o (gnc:option-set-value o '((232 2 1 #f) (233 1 1 #f) (234 1 1 #f) (235 1 1 #f) (236 1 1 #f) (237 2 1 #f))))) option))
+  ((lambda (o) (if o (gnc:option-set-value o '((162 2 1 #f) (163 1 1 #f) (164 1 1 #f) (165 1 1 #f) (166 1 1 #f) (167 2 1 #f))))) option))
 
 
 ; Section: General
@@ -1037,7 +1037,7 @@
 (let ((option (gnc:lookup-option options
                                  "Accounts"
                                  "Accounts")))
-  ((lambda (o) (if o (gnc:option-set-value o '("2357c3a12f19062e2ba8dde6cb126554" "e3c61c982fc94b6b81ac4d9010ffcee9" "f199f75fa81124fd7995943126281db4" "56889a71687a456983901d5797d715f8" "dbb1167ead404193b2f5263ee432f657" "8ec78d52562c4473831fdef2d63eb61a" "624500bebe85e0ae01fd0fe45bf00ccb" "b7c8aaf08e5b4cda84aaff81fd80344d" "93dfdcf4efa955df01ea5b2d63628d3b" "0e9ddb66bf6841ae8cd2380d925be9ca" "3be6c3a997d545ec89c600a2f86441c3" "6a6b26c6725948d4ae1cdc93dfe97c8c" "a058334b2b57482792e52cbff5423711" "44a3775680c74af6943406dd2c175908" "54551a63117c4de2b586b5f4af5685ea" "c97e56a31f23492daa88049c13612e5c" "90eda28fee64416bbf1e623012ab806f" "3693e35a12d24bfd9b45f59ab1201e3c" "6819c78d6e45490f8e4bb41f5f4c22d5" "ca2e803ee1eaddf08525f5ec3fff0396" "194df00f95c54f71834f5a5f2f7045e6" "392094c9722346d38a8218eb31a190ab" "39899b6d2a7d41a8a20ddc0f7d2a5b23" "dfbaa0904de34b69ae91bd3d04102e8d" "0d4f39fd0a994e35be7972af3a4b8d3c" "6fcc37554a704d0aa200154a78c6a029" "80a928e980c44e0c8b9cdbd2918cb06a" "37c4268f3fcd4a7ca9aca4115da12df9" "215eb35ee95871fb9295bc2794a01fd1" "d69773385f68dbfa97a19d053e51d101" "1ca46b236320548ba11459546cbd780f" "a9b32e7c3905437da6524ceb7ce8ef8e" "e33761a3604542cfae4b8d8ae160a3e7" "07214a9cbd4a4f7ba8ffc55829632daf" "c8c52d35778da3a2d929eaa761582c8a" "0688bf34ad744e279316905f5a946c3e" "a564bda384c94e5eaac208ff38678e94" "049acd019a014c688d8e9cc2de6f0e1a" "e5e7dcaad8e8589658895b74d0937b41" "268636d95ea64a03973ca3f6fd8be95d" "4df111fe26dd487291108c23a602592d" "d5c5d07460de4fe2bf62f579b48d8bff" "046868347d0b4a2ab5c959551d24cc4e" "070dcb555f5446d18f8c2e285530a30e" "3c1d9c8b1a12428daad05850217a6987" "9735632f73394b5c9de7546509278c01" "60991bf8cb22454a8973f419a3fc3444")))) option))
+  ((lambda (o) (if o (gnc:option-set-value o '("2357c3a12f19062e2ba8dde6cb126554" "e3c61c982fc94b6b81ac4d9010ffcee9" "f199f75fa81124fd7995943126281db4" "56889a71687a456983901d5797d715f8" "dbb1167ead404193b2f5263ee432f657" "8ec78d52562c4473831fdef2d63eb61a" "624500bebe85e0ae01fd0fe45bf00ccb" "b7c8aaf08e5b4cda84aaff81fd80344d" "93dfdcf4efa955df01ea5b2d63628d3b" "0e9ddb66bf6841ae8cd2380d925be9ca" "3be6c3a997d545ec89c600a2f86441c3" "6a6b26c6725948d4ae1cdc93dfe97c8c" "a058334b2b57482792e52cbff5423711" "44a3775680c74af6943406dd2c175908" "54551a63117c4de2b586b5f4af5685ea" "c97e56a31f23492daa88049c13612e5c" "90eda28fee64416bbf1e623012ab806f" "3693e35a12d24bfd9b45f59ab1201e3c" "6819c78d6e45490f8e4bb41f5f4c22d5" "ca2e803ee1eaddf08525f5ec3fff0396" "194df00f95c54f71834f5a5f2f7045e6" "392094c9722346d38a8218eb31a190ab" "39899b6d2a7d41a8a20ddc0f7d2a5b23" "dfbaa0904de34b69ae91bd3d04102e8d" "0d4f39fd0a994e35be7972af3a4b8d3c" "583e88764ae34a6b9a66f76d26d1dacb" "6fcc37554a704d0aa200154a78c6a029" "80a928e980c44e0c8b9cdbd2918cb06a" "37c4268f3fcd4a7ca9aca4115da12df9" "215eb35ee95871fb9295bc2794a01fd1" "d69773385f68dbfa97a19d053e51d101" "1ca46b236320548ba11459546cbd780f" "a9b32e7c3905437da6524ceb7ce8ef8e" "7f7be34da1664cd6b12268a638271f28" "e33761a3604542cfae4b8d8ae160a3e7" "07214a9cbd4a4f7ba8ffc55829632daf" "c8c52d35778da3a2d929eaa761582c8a" "0688bf34ad744e279316905f5a946c3e" "a564bda384c94e5eaac208ff38678e94" "049acd019a014c688d8e9cc2de6f0e1a" "e5e7dcaad8e8589658895b74d0937b41" "268636d95ea64a03973ca3f6fd8be95d" "4df111fe26dd487291108c23a602592d" "d5c5d07460de4fe2bf62f579b48d8bff" "046868347d0b4a2ab5c959551d24cc4e" "070dcb555f5446d18f8c2e285530a30e" "3c1d9c8b1a12428daad05850217a6987" "9735632f73394b5c9de7546509278c01" "60991bf8cb22454a8973f419a3fc3444")))) option))
 
 (let ((option (gnc:lookup-option options
                                  "Accounts"
@@ -1193,7 +1193,7 @@
 (let ((option (gnc:lookup-option options
                                  "__general"
                                  "report-list")))
-  ((lambda (o) (if o (gnc:option-set-value o '((238 2 1 #f) (239 1 1 #f) (240 1 1 #f) (241 1 1 #f) (242 1 1 #f) (243 2 1 #f))))) option))
+  ((lambda (o) (if o (gnc:option-set-value o '((168 2 1 #f) (169 1 1 #f) (170 1 1 #f) (171 1 1 #f) (172 1 1 #f) (173 2 1 #f))))) option))
 
 
 ; Section: General
@@ -1598,7 +1598,7 @@
 (let ((option (gnc:lookup-option options
                                  "__general"
                                  "report-list")))
-  ((lambda (o) (if o (gnc:option-set-value o '((244 1 1 #f) (245 1 1 #f) (246 1 1 #f) (247 1 1 #f) (248 2 1 #f) (249 2 1 #f) (250 2 1 #f) (251 2 1 #f) (252 2 1 #f) (253 1 1 #f) (254 1 1 #f) (255 2 1 #f) (256 2 1 #f) (257 2 1 #f))))) option))
+  ((lambda (o) (if o (gnc:option-set-value o '((174 1 1 #f) (175 1 1 #f) (176 1 1 #f) (177 1 1 #f) (178 2 1 #f) (179 2 1 #f) (180 2 1 #f) (181 2 1 #f) (182 2 1 #f) (183 1 1 #f) (184 1 1 #f) (185 2 1 #f) (186 2 1 #f) (187 2 1 #f))))) option))
 
 
 ; Section: General
@@ -1771,7 +1771,7 @@
 (let ((option (gnc:lookup-option options
                                  "Accounts"
                                  "Accounts")))
-  ((lambda (o) (if o (gnc:option-set-value o '("2357c3a12f19062e2ba8dde6cb126554" "e3c61c982fc94b6b81ac4d9010ffcee9" "f199f75fa81124fd7995943126281db4" "56889a71687a456983901d5797d715f8" "dbb1167ead404193b2f5263ee432f657" "8ec78d52562c4473831fdef2d63eb61a" "624500bebe85e0ae01fd0fe45bf00ccb" "b7c8aaf08e5b4cda84aaff81fd80344d" "93dfdcf4efa955df01ea5b2d63628d3b" "0e9ddb66bf6841ae8cd2380d925be9ca" "3be6c3a997d545ec89c600a2f86441c3" "6a6b26c6725948d4ae1cdc93dfe97c8c" "a058334b2b57482792e52cbff5423711" "44a3775680c74af6943406dd2c175908" "54551a63117c4de2b586b5f4af5685ea" "c97e56a31f23492daa88049c13612e5c" "90eda28fee64416bbf1e623012ab806f" "3693e35a12d24bfd9b45f59ab1201e3c" "6819c78d6e45490f8e4bb41f5f4c22d5" "ca2e803ee1eaddf08525f5ec3fff0396" "194df00f95c54f71834f5a5f2f7045e6" "392094c9722346d38a8218eb31a190ab" "39899b6d2a7d41a8a20ddc0f7d2a5b23" "dfbaa0904de34b69ae91bd3d04102e8d" "0d4f39fd0a994e35be7972af3a4b8d3c" "6fcc37554a704d0aa200154a78c6a029" "80a928e980c44e0c8b9cdbd2918cb06a" "37c4268f3fcd4a7ca9aca4115da12df9" "215eb35ee95871fb9295bc2794a01fd1" "d69773385f68dbfa97a19d053e51d101" "1ca46b236320548ba11459546cbd780f" "a9b32e7c3905437da6524ceb7ce8ef8e" "e33761a3604542cfae4b8d8ae160a3e7" "07214a9cbd4a4f7ba8ffc55829632daf" "c8c52d35778da3a2d929eaa761582c8a" "0688bf34ad744e279316905f5a946c3e" "a564bda384c94e5eaac208ff38678e94" "049acd019a014c688d8e9cc2de6f0e1a" "e5e7dcaad8e8589658895b74d0937b41" "268636d95ea64a03973ca3f6fd8be95d" "4df111fe26dd487291108c23a602592d" "d5c5d07460de4fe2bf62f579b48d8bff" "046868347d0b4a2ab5c959551d24cc4e" "070dcb555f5446d18f8c2e285530a30e" "3c1d9c8b1a12428daad05850217a6987" "9735632f73394b5c9de7546509278c01" "60991bf8cb22454a8973f419a3fc3444")))) option))
+  ((lambda (o) (if o (gnc:option-set-value o '("2357c3a12f19062e2ba8dde6cb126554" "e3c61c982fc94b6b81ac4d9010ffcee9" "f199f75fa81124fd7995943126281db4" "56889a71687a456983901d5797d715f8" "dbb1167ead404193b2f5263ee432f657" "8ec78d52562c4473831fdef2d63eb61a" "624500bebe85e0ae01fd0fe45bf00ccb" "b7c8aaf08e5b4cda84aaff81fd80344d" "93dfdcf4efa955df01ea5b2d63628d3b" "0e9ddb66bf6841ae8cd2380d925be9ca" "3be6c3a997d545ec89c600a2f86441c3" "6a6b26c6725948d4ae1cdc93dfe97c8c" "a058334b2b57482792e52cbff5423711" "44a3775680c74af6943406dd2c175908" "54551a63117c4de2b586b5f4af5685ea" "c97e56a31f23492daa88049c13612e5c" "90eda28fee64416bbf1e623012ab806f" "3693e35a12d24bfd9b45f59ab1201e3c" "6819c78d6e45490f8e4bb41f5f4c22d5" "ca2e803ee1eaddf08525f5ec3fff0396" "194df00f95c54f71834f5a5f2f7045e6" "392094c9722346d38a8218eb31a190ab" "39899b6d2a7d41a8a20ddc0f7d2a5b23" "dfbaa0904de34b69ae91bd3d04102e8d" "0d4f39fd0a994e35be7972af3a4b8d3c" "583e88764ae34a6b9a66f76d26d1dacb" "6fcc37554a704d0aa200154a78c6a029" "80a928e980c44e0c8b9cdbd2918cb06a" "37c4268f3fcd4a7ca9aca4115da12df9" "215eb35ee95871fb9295bc2794a01fd1" "d69773385f68dbfa97a19d053e51d101" "1ca46b236320548ba11459546cbd780f" "a9b32e7c3905437da6524ceb7ce8ef8e" "7f7be34da1664cd6b12268a638271f28" "e33761a3604542cfae4b8d8ae160a3e7" "07214a9cbd4a4f7ba8ffc55829632daf" "c8c52d35778da3a2d929eaa761582c8a" "0688bf34ad744e279316905f5a946c3e" "a564bda384c94e5eaac208ff38678e94" "049acd019a014c688d8e9cc2de6f0e1a" "e5e7dcaad8e8589658895b74d0937b41" "268636d95ea64a03973ca3f6fd8be95d" "4df111fe26dd487291108c23a602592d" "d5c5d07460de4fe2bf62f579b48d8bff" "046868347d0b4a2ab5c959551d24cc4e" "070dcb555f5446d18f8c2e285530a30e" "3c1d9c8b1a12428daad05850217a6987" "9735632f73394b5c9de7546509278c01" "60991bf8cb22454a8973f419a3fc3444")))) option))
 
 (let ((option (gnc:lookup-option options
                                  "Accounts"
@@ -2039,7 +2039,7 @@
 (let ((option (gnc:lookup-option options
                                  "Accounts"
                                  "Accounts")))
-  ((lambda (o) (if o (gnc:option-set-value o '("1f95e308bad045a1a2542bd0c46209bc" "c54aa1b9ec3441ee83c2e3c8826291d4" "1086cce544c24baa9f81d1fc09916935" "5f989ab0c37840d999b2bd8db6194929" "26510c3d9adf43538146c23aaca3edbb" "8900aab4e0be4cdcb5c945bede54f3d3" "6199864b0ae945319c62371bed701e23" "a5b955014c784b1e8dc133e330c557fe" "cd7529a231c84549a7469e7f8326e291" "8cde1f02b09749e2ba128e06d4ee17d8" "5206905f1af94229b630f856e4213cca" "e71318bcae0348efab48de2de702a75e" "c8a3815025b0530be697f3a49ef7e599" "14dd4c72ed81cff069ab2c45ebf7a05e")))) option))
+  ((lambda (o) (if o (gnc:option-set-value o '("1f95e308bad045a1a2542bd0c46209bc" "88c4b042c9e24ea997bd12cc8ed5ebd7" "c54aa1b9ec3441ee83c2e3c8826291d4" "1086cce544c24baa9f81d1fc09916935" "5f989ab0c37840d999b2bd8db6194929" "26510c3d9adf43538146c23aaca3edbb" "8900aab4e0be4cdcb5c945bede54f3d3" "6199864b0ae945319c62371bed701e23" "a5b955014c784b1e8dc133e330c557fe" "cd7529a231c84549a7469e7f8326e291" "8cde1f02b09749e2ba128e06d4ee17d8" "5206905f1af94229b630f856e4213cca" "e71318bcae0348efab48de2de702a75e" "c8a3815025b0530be697f3a49ef7e599" "14dd4c72ed81cff069ab2c45ebf7a05e")))) option))
 
 
 ; Section: Display
@@ -2159,7 +2159,7 @@
 (let ((option (gnc:lookup-option options
                                  "Accounts"
                                  "Accounts")))
-  ((lambda (o) (if o (gnc:option-set-value o '("1f95e308bad045a1a2542bd0c46209bc" "c54aa1b9ec3441ee83c2e3c8826291d4" "1086cce544c24baa9f81d1fc09916935" "5f989ab0c37840d999b2bd8db6194929" "26510c3d9adf43538146c23aaca3edbb" "8900aab4e0be4cdcb5c945bede54f3d3" "6199864b0ae945319c62371bed701e23" "a5b955014c784b1e8dc133e330c557fe" "cd7529a231c84549a7469e7f8326e291" "8cde1f02b09749e2ba128e06d4ee17d8" "5206905f1af94229b630f856e4213cca" "e71318bcae0348efab48de2de702a75e" "c8a3815025b0530be697f3a49ef7e599" "14dd4c72ed81cff069ab2c45ebf7a05e")))) option))
+  ((lambda (o) (if o (gnc:option-set-value o '("1f95e308bad045a1a2542bd0c46209bc" "88c4b042c9e24ea997bd12cc8ed5ebd7" "c54aa1b9ec3441ee83c2e3c8826291d4" "1086cce544c24baa9f81d1fc09916935" "5f989ab0c37840d999b2bd8db6194929" "26510c3d9adf43538146c23aaca3edbb" "8900aab4e0be4cdcb5c945bede54f3d3" "6199864b0ae945319c62371bed701e23" "a5b955014c784b1e8dc133e330c557fe" "cd7529a231c84549a7469e7f8326e291" "8cde1f02b09749e2ba128e06d4ee17d8" "5206905f1af94229b630f856e4213cca" "e71318bcae0348efab48de2de702a75e" "c8a3815025b0530be697f3a49ef7e599" "14dd4c72ed81cff069ab2c45ebf7a05e")))) option))
 
 (let ((option (gnc:lookup-option options
                                  "Accounts"
@@ -2281,7 +2281,7 @@
 (let ((option (gnc:lookup-option options
                                  "Accounts"
                                  "Accounts")))
-  ((lambda (o) (if o (gnc:option-set-value o '("c54aa1b9ec3441ee83c2e3c8826291d4")))) option))
+  ((lambda (o) (if o (gnc:option-set-value o '("88c4b042c9e24ea997bd12cc8ed5ebd7" "c54aa1b9ec3441ee83c2e3c8826291d4")))) option))
 
 
 ; Section: Display
@@ -2420,7 +2420,7 @@
 (let ((option (gnc:lookup-option options
                                  "__general"
                                  "report-list")))
-  ((lambda (o) (if o (gnc:option-set-value o '((258 1 1 #f) (259 1 1 #f) (260 1 1 #f) (261 1 1 #f) (262 2 1 #f) (263 2 1 #f) (264 2 1 #f) (265 1 1 #f) (266 1 1 #f) (267 2 1 #f) (268 2 1 #f))))) option))
+  ((lambda (o) (if o (gnc:option-set-value o '((188 1 1 #f) (189 1 1 #f) (190 1 1 #f) (191 1 1 #f) (192 2 1 #f) (193 2 1 #f) (194 2 1 #f) (195 1 1 #f) (196 1 1 #f) (197 2 1 #f) (198 2 1 #f))))) option))
 
 
 ; Section: General
