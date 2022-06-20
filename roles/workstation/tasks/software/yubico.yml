@@ -12,3 +12,10 @@
   package:
     name: pcscd
   when: yubico is defined and yubico == true
+
+- name: software | yubico enable socket
+  tags: packages,yubico,workstation-pacckages
+  systemd:
+    name: pcscd.socket
+    state: started
+    enabled: yes
