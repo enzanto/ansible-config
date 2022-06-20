@@ -12,7 +12,7 @@
   file:
     path: /home/fredrik/{{ item.dir }}
     state: directory
-    owner: fredri
+    owner: fredrik
     group: fredrik
     mode: 0700
   with_items:
