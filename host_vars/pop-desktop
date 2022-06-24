@@ -35,6 +35,7 @@ lutris: false
 mailspring: true
 mattermost: false
 minecraft: false
+obs: true
 packer: false
 signal: false
 spotify: false

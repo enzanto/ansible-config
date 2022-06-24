@@ -1,0 +1,8 @@
+- name: software | obs | install package
+  tags: packages,flatpak,obs,workstation-packages
+  become_user: fredrik
+  flatpak:
+    name: com.obsproject.Studio
+    method: user
+    state: present
+  when: obs is defined and obs == true
