@@ -37,7 +37,7 @@
     rule: allow
     port: '6443'
     proto: tcp
-    src: 172.16.249.0/24
+    src: 192.168.1.0/24
   when:
     - k8s_master is defined
     - k8s_master == true
@@ -49,7 +49,7 @@
     rule: allow
     port: 2379:2380
     proto: tcp
-    src: 172.16.249.0/24
+    src: 192.168.1.0/24
   when:
     - k8s_master is defined
     - k8s_master == true
@@ -61,7 +61,7 @@
     rule: allow
     port: '10250'
     proto: tcp
-    src: 172.16.249.0/24
+    src: 192.168.1.0/24
   when:
     - k8s_master is defined
     - k8s_master == true
@@ -73,7 +73,7 @@
     rule: allow
     port: '10251'
     proto: tcp
-    src: 172.16.249.0/24
+    src: 192.168.1.0/24
   when:
     - k8s_master is defined
     - k8s_master == true
@@ -85,7 +85,7 @@
     rule: allow
     port: '10252'
     proto: tcp
-    src: 172.16.249.0/24
+    src: 192.168.1.0/24
   when:
     - k8s_master is defined
     - k8s_master == true
@@ -97,7 +97,7 @@
     rule: allow
     port: '10255'
     proto: tcp
-    src: 172.16.249.0/24
+    src: 192.168.1.0/24
   when:
     - k8s_master is defined
     - k8s_master == true
@@ -109,10 +109,10 @@
     rule: allow
     port: 30000:32767
     proto: tcp
-    src: 172.16.249.0/24
+    src: 192.168.1.0/24
   when:
-    - k8s_worker is defined
-    - k8s_worker == true
+    - k8s_master is defined
+    - k8s_master == true
 
 - name: ufw | k8s | allow kubelet API (worker)
   tags: ufw
@@ -121,7 +121,7 @@
     rule: allow
     port: '10250'
     proto: tcp
-    src: 172.16.249.0/24
+    src: 192.168.1.0/24
   when:
     - k8s_worker is defined
     - k8s_worker == true
@@ -133,7 +133,7 @@
     rule: allow
     port: '10255'
     proto: tcp
-    src: 172.16.249.0/24
+    src: 192.168.1.0/24
   when:
     - k8s_worker is defined
     - k8s_worker == true
@@ -145,7 +145,7 @@
     rule: allow
     port: 30000:32767
     proto: tcp
-    src: 172.16.249.0/24
+    src: 192.168.1.0/24
   when:
     - k8s_worker is defined
     - k8s_worker == true
@@ -171,7 +171,7 @@
     comment: nrpe
     rule: allow
     port: '5666'
-    src: 172.16.249.9/32
+    src: 192.168.1.9/32
   when:
     - proxmox_instance is defined and proxmox_instance == true or
       raspberry_pi is defined and raspberry_pi == true
@@ -193,7 +193,7 @@
   ufw:
     comment: ssh from home network
     rule: allow
-    port: ssh
+    port: ssh_port
     src: 172.14.59.123/32
   when:
     - linode_instance is defined
@@ -204,17 +204,12 @@
   ufw:
     comment: ssh
     rule: allow
-    port: ssh
+    port: ssh_port
     src: '{{ item }}'
   loop:
-    - 10.10.10.10/24
-    - 172.16.248.0/24
-    - 172.16.249.0/24
-    - 172.16.250.0/24
-    - 172.16.251.0/24
+    - 192.168.1.0/24
   when:
-    - linode_instance is defined
-    - linode_instance == false
+    - ssh_users is defined
 
 # plex
 - name: ufw | plex | allow plex
