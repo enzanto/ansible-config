@@ -1,8 +1,8 @@
 - name: software | kdenlive | install package
-tags: packages,flatpak,kdenlive,workstation-packages
-become_user: fredrik
-flatpak:
-  name: org.kde.kdenlive
-  method: user
-  state: present
-when: kdenlive is defined and kdenlive == true
+  tags: packages,flatpak,kdenlive,workstation-packages
+  become_user: fredrik
+  flatpak:
+    name: org.kde.kdenlive
+    method: user
+    state: present
+  when: kdenlive is defined and kdenlive == true
