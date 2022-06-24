@@ -29,6 +29,7 @@ gnucash: true
 glimpse: false
 joplin: true
 keepassxc: false
+kdenlive: true
 libreoffice: true
 lutris: false
 mailspring: true
