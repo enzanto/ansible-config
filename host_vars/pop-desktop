@@ -20,7 +20,7 @@ audacity: false
 authy: false
 autofs: true
 chromium: false
-darktable: false
+darktable: true
 discord: true
 firefox: false
 foliate: false
