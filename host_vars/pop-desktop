@@ -16,7 +16,7 @@ terminal_emulator: terminator
 web_browser: firefox
 
 # application selection
-audacity: false
+audacity: true
 authy: false
 autofs: true
 chromium: false
