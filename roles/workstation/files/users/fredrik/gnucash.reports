@@ -2281,7 +2281,7 @@
 (let ((option (gnc:lookup-option options
                                  "Accounts"
                                  "Accounts")))
-  ((lambda (o) (if o (gnc:option-set-value o '("88c4b042c9e24ea997bd12cc8ed5ebd7" "c54aa1b9ec3441ee83c2e3c8826291d4" "2f3552bda4964901b924f128ae7a57c1")))) option))
+  ((lambda (o) (if o (gnc:option-set-value o '("5251f18eb2664258ae4483d3e95b38d2" "9a5732b3bf264a2da7bcc878d5ffa701" "88c4b042c9e24ea997bd12cc8ed5ebd7" "c54aa1b9ec3441ee83c2e3c8826291d4" "f924bca4d5f044da94951ca44131e994")))) option))
 
 
 ; Section: Display
