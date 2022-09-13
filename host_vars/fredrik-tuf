@@ -35,6 +35,7 @@ mailspring: true
 mattermost: false
 minecraft: false
 packer: false
+retroarch: true
 signal: false
 spotify: false
 steam: true

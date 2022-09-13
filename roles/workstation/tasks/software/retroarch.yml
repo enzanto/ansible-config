@@ -1,0 +1,8 @@
+- name: software | retroarch | install package
+  tags: packages,flatpak,retroarch,workstation-packages
+  become_user: fredrik
+  flatpak:
+    name: org.libretro.RetroArch
+    method: user
+    state: present
+  when: retroarch is defined and discord == true

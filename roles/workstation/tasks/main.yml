@@ -27,6 +27,7 @@
   - import_tasks: software/libreoffice.yml
   - import_tasks: software/mailspring.yml
   - import_tasks: software/obs.yml
+  - import_tasks: software/retroarch.yml
   - import_tasks: software/steam.yml
   - import_tasks: software/virtualbox.yml
   - import_tasks: software/vlc.yml

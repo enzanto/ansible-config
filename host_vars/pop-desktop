@@ -37,6 +37,7 @@ mattermost: false
 minecraft: false
 obs: true
 packer: false
+retroarch: true
 signal: false
 spotify: false
 steam: true
