@@ -12,7 +12,7 @@
 (let ((option (gnc:lookup-option options
                                  "__general"
                                  "report-list")))
-  ((lambda (o) (if o (gnc:option-set-value o '((37 1 1 #f) (38 1 1 #f) (39 1 1 #f) (40 1 1 #f) (41 2 1 #f) (42 2 1 #f) (43 2 1 #f) (44 1 1 #f) (45 1 1 #f) (46 2 1 #f) (47 2 1 #f))))) option))
+  ((lambda (o) (if o (gnc:option-set-value o '((350 1 1 #f) (351 1 1 #f) (352 1 1 #f) (353 1 1 #f) (354 2 1 #f) (355 2 1 #f) (356 2 1 #f) (357 1 1 #f) (358 1 1 #f) (359 2 1 #f) (360 2 1 #f))))) option))
 
 
 ; Section: General
@@ -778,7 +778,7 @@
 (let ((option (gnc:lookup-option options
                                  "__general"
                                  "report-list")))
-  ((lambda (o) (if o (gnc:option-set-value o '((48 2 1 #f) (49 1 1 #f) (50 1 1 #f) (51 1 1 #f) (52 1 1 #f) (53 2 1 #f))))) option))
+  ((lambda (o) (if o (gnc:option-set-value o '((361 2 1 #f) (362 1 1 #f) (363 1 1 #f) (364 1 1 #f) (365 1 1 #f) (366 2 1 #f))))) option))
 
 
 ; Section: General
@@ -1193,7 +1193,7 @@
 (let ((option (gnc:lookup-option options
                                  "__general"
                                  "report-list")))
-  ((lambda (o) (if o (gnc:option-set-value o '((54 2 1 #f) (55 1 1 #f) (56 1 1 #f) (57 1 1 #f) (58 1 1 #f) (59 2 1 #f))))) option))
+  ((lambda (o) (if o (gnc:option-set-value o '((367 2 1 #f) (368 1 1 #f) (369 1 1 #f) (370 1 1 #f) (371 1 1 #f) (372 2 1 #f))))) option))
 
 
 ; Section: General
@@ -1598,7 +1598,7 @@
 (let ((option (gnc:lookup-option options
                                  "__general"
                                  "report-list")))
-  ((lambda (o) (if o (gnc:option-set-value o '((60 1 1 #f) (61 1 1 #f) (62 1 1 #f) (63 1 1 #f) (64 2 1 #f) (65 2 1 #f) (66 2 1 #f) (67 2 1 #f) (68 2 1 #f) (69 1 1 #f) (70 1 1 #f) (71 2 1 #f) (72 2 1 #f) (73 2 1 #f))))) option))
+  ((lambda (o) (if o (gnc:option-set-value o '((373 1 1 #f) (374 1 1 #f) (375 1 1 #f) (376 1 1 #f) (377 2 1 #f) (378 2 1 #f) (379 2 1 #f) (380 2 1 #f) (381 2 1 #f) (382 1 1 #f) (383 1 1 #f) (384 2 1 #f) (385 2 1 #f) (386 2 1 #f))))) option))
 
 
 ; Section: General
@@ -1688,6 +1688,11 @@
                                  "Display"
                                  "Plot Width")))
   ((lambda (o) (if o (gnc:option-set-value o '(pixels . 500.0)))) option))
+
+(let ((option (gnc:lookup-option options
+                                 "Display"
+                                 "Maximum Slices")))
+  ((lambda (o) (if o (gnc:option-set-value o 8.0))) option))
 
 (let ((option (gnc:lookup-option options
                                  "Display"
@@ -2039,7 +2044,7 @@
 (let ((option (gnc:lookup-option options
                                  "Accounts"
                                  "Accounts")))
-  ((lambda (o) (if o (gnc:option-set-value o '("1f95e308bad045a1a2542bd0c46209bc" "88c4b042c9e24ea997bd12cc8ed5ebd7" "c54aa1b9ec3441ee83c2e3c8826291d4" "2f3552bda4964901b924f128ae7a57c1" "1086cce544c24baa9f81d1fc09916935" "5f989ab0c37840d999b2bd8db6194929" "26510c3d9adf43538146c23aaca3edbb" "8900aab4e0be4cdcb5c945bede54f3d3" "6199864b0ae945319c62371bed701e23" "a5b955014c784b1e8dc133e330c557fe" "cd7529a231c84549a7469e7f8326e291" "8cde1f02b09749e2ba128e06d4ee17d8" "5206905f1af94229b630f856e4213cca" "e71318bcae0348efab48de2de702a75e" "c8a3815025b0530be697f3a49ef7e599" "14dd4c72ed81cff069ab2c45ebf7a05e")))) option))
+  ((lambda (o) (if o (gnc:option-set-value o '("1f95e308bad045a1a2542bd0c46209bc" "32f6976221da452f99d190e3ead60a26" "5251f18eb2664258ae4483d3e95b38d2" "9a5732b3bf264a2da7bcc878d5ffa701" "88c4b042c9e24ea997bd12cc8ed5ebd7" "c54aa1b9ec3441ee83c2e3c8826291d4" "f924bca4d5f044da94951ca44131e994" "1086cce544c24baa9f81d1fc09916935" "5f989ab0c37840d999b2bd8db6194929" "26510c3d9adf43538146c23aaca3edbb" "8900aab4e0be4cdcb5c945bede54f3d3" "6199864b0ae945319c62371bed701e23" "a5b955014c784b1e8dc133e330c557fe" "cd7529a231c84549a7469e7f8326e291" "8cde1f02b09749e2ba128e06d4ee17d8" "5206905f1af94229b630f856e4213cca" "e71318bcae0348efab48de2de702a75e" "c8a3815025b0530be697f3a49ef7e599" "14dd4c72ed81cff069ab2c45ebf7a05e")))) option))
 
 
 ; Section: Display
@@ -2105,7 +2110,7 @@
 (let ((option (gnc:lookup-option options
                                  "Accounts"
                                  "Accounts")))
-  ((lambda (o) (if o (gnc:option-set-value o '("1f95e308bad045a1a2542bd0c46209bc" "c54aa1b9ec3441ee83c2e3c8826291d4" "1086cce544c24baa9f81d1fc09916935" "5f989ab0c37840d999b2bd8db6194929" "26510c3d9adf43538146c23aaca3edbb" "8900aab4e0be4cdcb5c945bede54f3d3" "6199864b0ae945319c62371bed701e23" "a5b955014c784b1e8dc133e330c557fe" "cd7529a231c84549a7469e7f8326e291" "8cde1f02b09749e2ba128e06d4ee17d8" "5206905f1af94229b630f856e4213cca" "e71318bcae0348efab48de2de702a75e" "c8a3815025b0530be697f3a49ef7e599" "14dd4c72ed81cff069ab2c45ebf7a05e")))) option))
+  ((lambda (o) (if o (gnc:option-set-value o '("1f95e308bad045a1a2542bd0c46209bc" "32f6976221da452f99d190e3ead60a26" "5251f18eb2664258ae4483d3e95b38d2" "9a5732b3bf264a2da7bcc878d5ffa701" "88c4b042c9e24ea997bd12cc8ed5ebd7" "c54aa1b9ec3441ee83c2e3c8826291d4" "f924bca4d5f044da94951ca44131e994" "1086cce544c24baa9f81d1fc09916935" "5f989ab0c37840d999b2bd8db6194929" "26510c3d9adf43538146c23aaca3edbb" "8900aab4e0be4cdcb5c945bede54f3d3" "6199864b0ae945319c62371bed701e23" "a5b955014c784b1e8dc133e330c557fe" "cd7529a231c84549a7469e7f8326e291" "8cde1f02b09749e2ba128e06d4ee17d8" "5206905f1af94229b630f856e4213cca" "e71318bcae0348efab48de2de702a75e" "c8a3815025b0530be697f3a49ef7e599" "14dd4c72ed81cff069ab2c45ebf7a05e")))) option))
 
 
 ; Section: Display
@@ -2159,7 +2164,7 @@
 (let ((option (gnc:lookup-option options
                                  "Accounts"
                                  "Accounts")))
-  ((lambda (o) (if o (gnc:option-set-value o '("1f95e308bad045a1a2542bd0c46209bc" "88c4b042c9e24ea997bd12cc8ed5ebd7" "c54aa1b9ec3441ee83c2e3c8826291d4" "2f3552bda4964901b924f128ae7a57c1" "1086cce544c24baa9f81d1fc09916935" "5f989ab0c37840d999b2bd8db6194929" "26510c3d9adf43538146c23aaca3edbb" "8900aab4e0be4cdcb5c945bede54f3d3" "6199864b0ae945319c62371bed701e23" "a5b955014c784b1e8dc133e330c557fe" "cd7529a231c84549a7469e7f8326e291" "8cde1f02b09749e2ba128e06d4ee17d8" "5206905f1af94229b630f856e4213cca" "e71318bcae0348efab48de2de702a75e" "c8a3815025b0530be697f3a49ef7e599" "14dd4c72ed81cff069ab2c45ebf7a05e")))) option))
+  ((lambda (o) (if o (gnc:option-set-value o '("cd04acbac8c3a5d35e7058a1f2691862" "1f95e308bad045a1a2542bd0c46209bc" "32f6976221da452f99d190e3ead60a26" "5251f18eb2664258ae4483d3e95b38d2" "9a5732b3bf264a2da7bcc878d5ffa701" "88c4b042c9e24ea997bd12cc8ed5ebd7" "c54aa1b9ec3441ee83c2e3c8826291d4" "f924bca4d5f044da94951ca44131e994" "1086cce544c24baa9f81d1fc09916935" "5f989ab0c37840d999b2bd8db6194929" "26510c3d9adf43538146c23aaca3edbb" "8900aab4e0be4cdcb5c945bede54f3d3" "6199864b0ae945319c62371bed701e23" "a5b955014c784b1e8dc133e330c557fe" "cd7529a231c84549a7469e7f8326e291" "8cde1f02b09749e2ba128e06d4ee17d8" "5206905f1af94229b630f856e4213cca" "e71318bcae0348efab48de2de702a75e" "c8a3815025b0530be697f3a49ef7e599" "14dd4c72ed81cff069ab2c45ebf7a05e")))) option))
 
 (let ((option (gnc:lookup-option options
                                  "Accounts"
@@ -2281,7 +2286,7 @@
 (let ((option (gnc:lookup-option options
                                  "Accounts"
                                  "Accounts")))
-  ((lambda (o) (if o (gnc:option-set-value o '("5251f18eb2664258ae4483d3e95b38d2" "9a5732b3bf264a2da7bcc878d5ffa701" "88c4b042c9e24ea997bd12cc8ed5ebd7" "c54aa1b9ec3441ee83c2e3c8826291d4" "f924bca4d5f044da94951ca44131e994")))) option))
+  ((lambda (o) (if o (gnc:option-set-value o '("32f6976221da452f99d190e3ead60a26" "5251f18eb2664258ae4483d3e95b38d2" "9a5732b3bf264a2da7bcc878d5ffa701" "88c4b042c9e24ea997bd12cc8ed5ebd7" "c54aa1b9ec3441ee83c2e3c8826291d4" "f924bca4d5f044da94951ca44131e994")))) option))
 
 
 ; Section: Display
@@ -2420,7 +2425,7 @@
 (let ((option (gnc:lookup-option options
                                  "__general"
                                  "report-list")))
-  ((lambda (o) (if o (gnc:option-set-value o '((74 1 1 #f) (75 1 1 #f) (76 1 1 #f) (77 1 1 #f) (78 2 1 #f) (79 2 1 #f) (80 2 1 #f) (81 1 1 #f) (82 1 1 #f) (83 2 1 #f) (84 2 1 #f))))) option))
+  ((lambda (o) (if o (gnc:option-set-value o '((387 1 1 #f) (388 1 1 #f) (389 1 1 #f) (390 1 1 #f) (391 2 1 #f) (392 2 1 #f) (393 2 1 #f) (394 1 1 #f) (395 1 1 #f) (396 2 1 #f) (397 2 1 #f))))) option))
 
 
 ; Section: General
