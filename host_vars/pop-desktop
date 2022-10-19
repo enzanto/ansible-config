@@ -19,6 +19,7 @@ web_browser: firefox
 audacity: true
 authy: false
 autofs: true
+bottles: true
 chromium: false
 darktable: true
 discord: true
