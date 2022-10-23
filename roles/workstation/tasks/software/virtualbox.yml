@@ -5,3 +5,14 @@
   when:
     - virtualbox is defined
     - virtualbox == true
+      
+- name: users | fredrik | create user
+  tags: fredrik,users,virtualbox
+  user:
+    name: fredrik
+    group: fredrik
+    groups: vboxusers 
+    state: present
+  when:
+    - virtualbox is defined
+    - virtualbox == true
