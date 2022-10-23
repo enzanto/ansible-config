@@ -13,6 +13,7 @@
     group: fredrik
     groups: vboxusers 
     state: present
+    append: yes
   when:
     - virtualbox is defined
     - virtualbox == true
