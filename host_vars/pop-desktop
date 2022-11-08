@@ -23,6 +23,7 @@ bottles: true
 chromium: false
 darktable: true
 discord: true
+element: true
 firefox: false
 foliate: false
 games: false

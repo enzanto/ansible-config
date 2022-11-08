@@ -21,6 +21,7 @@
   - import_tasks: software/code.yml
   - import_tasks: software/darktable.yml
   - import_tasks: software/discord.yml
+  - import_tasks: software/element.yml
   - import_tasks: software/firefox.yml
   - import_tasks: software/gnucash.yml
   - import_tasks: software/joplin.yml

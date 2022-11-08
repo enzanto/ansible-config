@@ -1,0 +1,8 @@
+- name: software | element | install package
+  tags: packages,flatpak,element,workstation-packages
+  become_user: fredrik
+  flatpak:
+    name: im.riot.Riot
+    method: user
+    state: present
+  when: element is defined and element == true
