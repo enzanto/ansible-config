@@ -1,0 +1,8 @@
+- name: software | myuzi | install package
+  tags: packages,flatpak,myuzi,workstation-packages
+  become_user: fredrik
+  flatpak:
+    name: com.gitlab.zehkira.Myuzi
+    method: user
+    state: present
+  when: myuzi is defined and myuzi == true
