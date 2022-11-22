@@ -37,6 +37,7 @@ lutris: false
 mailspring: true
 mattermost: false
 minecraft: false
+myuzi: true
 obs: true
 packer: false
 retroarch: true
