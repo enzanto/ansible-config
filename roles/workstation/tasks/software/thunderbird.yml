@@ -2,7 +2,7 @@
   tags: packages,flatpak,thunderbird,workstation-packages
   become_user: fredrik
   flatpak:
-    name: flathub org.mozilla.Thunderbird
+    name: org.mozilla.Thunderbird
     method: user
     state: present
   when: thunderbird is defined and thunderbird == true
