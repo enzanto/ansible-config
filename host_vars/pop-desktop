@@ -46,7 +46,7 @@ spotify: false
 steam: true
 syncthing: false
 terraform: false
-thunderbird: false
+thunderbird: true
 todoist: false
 ulauncher: false
 vagrant: false
