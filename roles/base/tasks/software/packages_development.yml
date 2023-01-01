@@ -11,3 +11,10 @@
       - "{{ python_virtualenv_package }}"
       - docker.io
     state: latest
+
+- name: system setup | add user to docker group
+  tags: dev,development,group
+  user:
+    name: fredrik
+    groups: docker
+    append: yes
