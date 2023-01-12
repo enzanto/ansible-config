@@ -8,7 +8,7 @@
   user:
     name: fredrik
     group: fredrik
-    groups: adm,{{ sudo_group }}
+    groups: adm,{{ sudo_group }},dialout
     state: present
     comment: "Fredrik Gjellestad"
     password: "{{ fredrik_passwd }}"
