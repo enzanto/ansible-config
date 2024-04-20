@@ -14,13 +14,14 @@ Host worker02
 	User fredrik
   	IdentityFile ~/.ssh/id_ed25519
 Host desktop
-	HostName 192.168.1.53
+	HostName 192.168.1.206
 	User fredrik
   	IdentityFile ~/.ssh/id_ed25519
 Host laptop
 	HostName 192.168.1.80
 	User fredrik
   	IdentityFile ~/.ssh/id_ed25519
-Host android
-  	HostName 192.168.1.126
-  	Port 2222
+Host hydroponics
+	User pi
+	IdentityFile ~/.ssh/id_ed25519
+  	HostName 192.168.1.117
