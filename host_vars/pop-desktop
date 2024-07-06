@@ -34,7 +34,7 @@ keepassxc: false
 kdenlive: true
 libreoffice: true
 lutris: false
-mailspring: true
+mailspring: false
 mattermost: false
 minecraft: false
 myuzi: true
