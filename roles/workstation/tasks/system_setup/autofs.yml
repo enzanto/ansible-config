@@ -25,7 +25,7 @@
     group: fredrik
     mode: 0700
   with_items:
-    - { dir: NAS }
+    - { dir: media }
 
 - name: system setup | autofs | copy auto.master config file
   tags: autofs,dotfiles,dotfiles-fredrik
