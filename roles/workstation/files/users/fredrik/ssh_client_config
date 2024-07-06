@@ -1,13 +1,14 @@
 Host NAS
-	HostName 192.168.1.223
-	User pi
-Host cluster
-	HostName 192.168.1.204
-	User fredrik
-  IdentityFile ~/.ssh/id_ed25519
+	HostName 192.168.10.11
+	User root
+  	IdentityFile ~/.ssh/id_ed25519
+Host pm1
+	HostName 192.168.10.10
+	User root
+  	IdentityFile ~/.ssh/id_ed25519
 Host worker01
-	HostName 192.168.1.92
-	User fredrik
+	HostName 192.168.10.85
+	User root
   	IdentityFile ~/.ssh/id_ed25519
 Host worker02
 	HostName 192.168.1.176
