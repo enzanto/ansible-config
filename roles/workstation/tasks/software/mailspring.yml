@@ -4,5 +4,5 @@
   flatpak:
     name: com.getmailspring.Mailspring
     method: user
-    state: present
-  when: mailspring is defined and mailspring == true
+    state: absent
+  when: mailspring is defined and mailspring == false
