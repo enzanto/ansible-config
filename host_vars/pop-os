@@ -31,7 +31,7 @@ joplin: true
 keepassxc: false
 libreoffice: true
 lutris: false
-mailspring: true
+mailspring: false
 mattermost: false
 minecraft: false
 packer: false

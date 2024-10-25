@@ -26,6 +26,7 @@
     mode: 0700
   with_items:
     - { dir: media }
+    - { dir: k3s_persistent }
 
 - name: system setup | autofs | copy auto.master config file
   tags: autofs,dotfiles,dotfiles-fredrik
