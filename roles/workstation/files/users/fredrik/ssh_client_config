@@ -6,13 +6,29 @@ Host pm1
 	HostName 192.168.10.10
 	User root
   	IdentityFile ~/.ssh/id_ed25519
-Host worker01
+Host pm2
+	HostName 192.168.10.20
+	User root
+  	IdentityFile ~/.ssh/id_ed25519
+Host k3s-master-01 
+	HostName 192.168.10.80
+	User root
+  	IdentityFile ~/.ssh/id_ed25519
+Host k3s-worker-01
 	HostName 192.168.10.85
 	User root
   	IdentityFile ~/.ssh/id_ed25519
-Host worker02
-	HostName 192.168.1.176
-	User fredrik
+Host k3s-worker-02
+	HostName 192.168.10.86
+	User root
+  	IdentityFile ~/.ssh/id_ed25519
+Host k3s-worker-03
+	HostName 192.168.10.87
+	User root
+  	IdentityFile ~/.ssh/id_ed25519
+Host k3s-raspi-node
+	HostName 192.168.10.106
+	User enzanto
   	IdentityFile ~/.ssh/id_ed25519
 Host desktop
 	HostName 192.168.1.206
