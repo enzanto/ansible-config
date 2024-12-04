@@ -26,8 +26,12 @@ Host k3s-worker-03
 	HostName 192.168.10.87
 	User root
   	IdentityFile ~/.ssh/id_ed25519
-Host k3s-raspi-node
+Host k3s-raspi-master01
 	HostName 192.168.10.106
+	User enzanto
+  	IdentityFile ~/.ssh/id_ed25519
+Host k3s-raspi-worker01
+	HostName 192.168.10.216
 	User enzanto
   	IdentityFile ~/.ssh/id_ed25519
 Host desktop
